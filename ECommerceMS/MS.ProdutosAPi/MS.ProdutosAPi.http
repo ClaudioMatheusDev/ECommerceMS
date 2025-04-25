@@ -1,0 +1,6 @@
+@MS.ProdutosAPi_HostAddress = http://localhost:5081
+
+GET {{MS.ProdutosAPi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
