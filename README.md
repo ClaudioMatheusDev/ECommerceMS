@@ -15,8 +15,26 @@ Este repositório contém um projeto de E-commerce desenvolvido em **ASP.NET Cor
 ## Estrutura do Projeto
 O sistema é composto por vários microservices, cada um responsável por uma funcionalidade específica:
 
-- **IdentityServer**: Responsável pela autenticação e gestão de usuários com **IdentityServer** e **JWT**.
-- **ProdutoApi**: Gerencia produtos, categorias e preços.
-- **CartApi**: Gerencia carrinho de compras.
-- **DescontoApi**: Gerencia códigos promocionais e descontos.
+EcommerceMS/
+└── src/                     # Código dos microsserviços
+    ├── IdentityServer/      # Autenticação e gestão de usuários (JWT + IdentityServer)
+    ├── ProdutoApi/          # Gestão de produtos, categorias, estoque e preços
+    ├── CartApi/             # Carrinho de compras
+    ├── DescontoApi/         # Cupons e regras de desconto
+    ├── PedidoApi/           # Processamento e status dos pedidos
+    ├── PagamentoApi/        # Processamento de pagamentos (Pix, Cartão, Boleto)
+    ├── ClienteApi/          # Cadastro, login e informações de clientes
+    ├── EstoqueApi/          # Controle de estoque
+    ├── EntregaApi/          # Cálculo de frete e rastreio de pedidos
+    └── Shared/              # Classes compartilhadas entre os microserviços (DTOs, configs)
 
+├── docker/                  # Configurações dos containers
+│   ├── sqlserver/           # Scripts e configs do banco
+│   └── rabbitmq/            # Configurações do RabbitMQ
+│
+├── tests/                   # Testes unitários e de integração
+├── docs/                    # Documentação do sistema
+├── .gitignore               # Arquivos/dirs ignorados pelo Git
+├── docker-compose.yml       # Orquestração de serviços com Docker
+├── README.md                # Documentação inicial do projeto
+└── CHANGELOG.md             # Histórico de mudanças
