@@ -15,6 +15,7 @@ Este repositório contém um projeto de E-commerce desenvolvido em **ASP.NET Cor
 ## Estrutura do Projeto
 O sistema é composto por vários microservices, cada um responsável por uma funcionalidade específica:
 
+```plaintext
 EcommerceMS/
 └── src/                     # Código dos microsserviços
     ├── IdentityServer/      # Autenticação e gestão de usuários (JWT + IdentityServer)
